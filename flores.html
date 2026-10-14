@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Mis Flores Favoritas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #0f172a;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 2.25rem;
+    }
+
+    .galeria-flores {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .tarjeta-flor {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Efecto al pasar el cursor */
+    .tarjeta-flor:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+    }
+
+    .tarjeta-flor img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info-flor {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .info-flor h3 {
+      margin-bottom: 8px;
+      color: #1e293b;
+      font-size: 1.25rem;
+    }
+
+    .info-flor p {
+      color: #64748b;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .btn-flor {
+      color: #e84393;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="btn-regresar">
+    <a href="index.html">&larr; Volver al Inicio</a>
+  </div>
+
+  <h1>Mis Flores Favoritas</h1>
+
+  <div class="galeria-flores">
+  
+    <!-- 1. Rosas -->
+    <a href="https://es.wikipedia.org/wiki/Rosa" target="_blank" rel="noopener noreferrer" class="tarjeta-flor">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPNyoJ1OyJvy1mm7hd9Z9_xJcVF8VL0dG5a0E9g26KQQ&s=10" alt="Rosas">
+      <div class="info-flor">
+        <h3>Rosas</h3>
+        <p>Símbolos clásicos de amor y elegancia. Destacan por sus pétalos aterciopelados y su inigualable fragancia.</p>
+        <span class="btn-flor">Ver más sobre flores &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 2. Hortensias -->
+    <a href="https://es.wikipedia.org/wiki/Hydrangea" target="_blank" rel="noopener noreferrer" class="tarjeta-flor">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlv7Aj9fKoIARdV4xZdgTqCmZ_QX0OYc6nRKexZD2D2jZCizNpTKMp9TB_&s=10" alt="Hortensias">
+      <div class="info-flor">
+        <h3>Hortensias</h3>
+        <p>Hermosos arbustos con grandes ramos esféricos que transmiten paz, serenidad y frescura natural.</p>
+        <span class="btn-flor">Ver más sobre  flores &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 3. Cerezos en Flor -->
+    <a href="https://es.wikipedia.org/wiki/Sakura_(cerezo)" target="_blank" rel=""noopener noreferrer" class="tarjeta-flor">
+      <img src="https://media.admagazine.com/photos/64f79ec1adb58ff7b4aea46f/master/w_1600%2Cc_limit/flor%25E2%2580%2591de%25E2%2580%2591cerezo%25E2%2580%2591color.jpg" alt="Flor de Cerezo">
+      <div class="info-flor">
+        <h3>Cerezos en Flor</h3>
+        <p>La delicada flor de sakura evoca el afecto, la creatividad y la belleza efímera de la primavera.</p>
+        <span class="btn-flor">Ver más sobre  flores &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 4. Lavanda -->
+    <a href="https://es.wikipedia.org/wiki/Lavandula" target="_blank" rel=""noopener noreferrer" class="tarjeta-flor">
+      <img src="https://www.vrbo.com/es-es/guias-de-viaje/wp-content/uploads/4ZWww3qifr59Ls7ZIKHkih/2ad0a8722c75a03d228235ede677deca/hisanari-kunimoto-DlYzHwAl32g-unsplash.jpg" alt="Flores de Lavanda">
+      <div class="info-flor">
+        <h3>Lavanda</h3>
+        <p>Reconocida por sus espigas moradas y propiedades relajantes, aporta un aire de misterio y magia.</p>
+        <span class="btn-flor">Ver más sobre flores &rarr;</span>
+      </div>
+    </a>
+
+    <!-- 5. Girasoles -->
+    <a href="https://es.wikipedia.org/wiki/Helianthus_annuus" target="_blank" rel="noopener noreferrer" class="tarjeta-flor">
+      <img src="https://www.hola.com/horizon/square/5ce2e13d4cdc-girasoles-mariposa-t.jpg" alt="Girasol">
+      <div class="info-flor">
+        <h3>Girasoles</h3>
+        <p>Flores radiantes que siguen la trayectoria del sol, llenando cualquier espacio de alegría y optimismo.</p>
+        <span class="btn-flor">Ver más sobre flores &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+
+</body>
+</html>
